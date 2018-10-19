@@ -11,6 +11,65 @@ a {
 a:hover {
   text-decoration: none; }
 
+.loader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -999;
+  position: absolute;
+  align-items: center;
+  justify-content: center; }
+
+@keyframes initial-loading {
+  0%,
+    100% {
+    transform: translate(-34px, 0); }
+  50% {
+    transform: translate(96px, 0); } }
+.initial-load-animation {
+  /* padding-top: 96px; */
+  width: 200px;
+  /* margin: 0 auto; */
+  transform: scale(1);
+  transition: transform 0.5s ease; }
+
+.initial-load-animation .linkedin-image {
+  background-image: url(../img/ui/logo_white.svg);
+  height: 42px;
+  width: 80px;
+  margin: 0 auto 32px;
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: all 0.5s ease-out; }
+
+.initial-load-animation .loading-bar {
+  width: 130px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background-color: #cfcfcf;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotateY(0);
+  transition: transform 0.3s ease-in; }
+
+.initial-load-animation .loading-bar .blue-bar {
+  height: 100%;
+  width: 68px;
+  position: absolute;
+  transform: translate(-34px, 0);
+  background-color: rgba(99, 185, 40, 0.5);
+  border-radius: 2px;
+  animation: initial-loading 1.5s infinite ease; }
+
+.initial-load-animation.fade-load .linkedin-image {
+  transform: translate(0, 10px);
+  opacity: 0; }
+
+.initial-load-animation.fade-load .loading-bar {
+  transform: rotateY(90deg); }
+
 .container, .container-fluid {
   position: relative; }
 
@@ -54,7 +113,7 @@ a:hover {
   display: block;
   width: 100%;
   padding-top: 38.3333333333%;
-  background: url("img/logo_simple.svg");
+  background: url(../img/ui/logo_simple.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -65,7 +124,7 @@ a:hover {
     width: 80px; }
   .header-brand:before {
     padding-top: 52.5%;
-    background-image: url("img/logo_full.svg"); } }
+    background-image: url(../img/ui/logo_full.svg); } }
 
 .localBusiness {
   padding: 3.75rem 1rem;
@@ -137,6 +196,90 @@ h6.infoitem__caption {
 @media (max-width: 767.98px) {
   .c-footer {
     text-align: center !important; } }
+
+.drop {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 1.5rem; }
+
+.drop__btn, .drop__btn2 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 1.5rem;
+  padding: .4375rem 2.5rem .4375rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: left;
+  color: #fff;
+  background: transparent; }
+
+.drop__btn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: .5rem;
+  height: .5rem;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.8);
+  margin-top: -.375rem;
+  transform: rotate(135deg); }
+
+.drop__btn:focus:after {
+  margin-top: -.125rem;
+  transform: rotate(-45deg); }
+
+.drop__btn:focus + .drop__box {
+  display: block; }
+
+.drop__btn2 {
+  position: absolute;
+  bottom: 0;
+  display: none; }
+
+.drop__btn:focus ~ .drop__btn2 {
+  display: block; }
+
+.drop__box:hover {
+  display: block; }
+
+.drop__box {
+  display: none;
+  position: absolute;
+  bottom: 3.25rem;
+  left: 0;
+  width: 100%; }
+
+.drop__menu__item {
+  display: block;
+  padding: .375rem;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff; }
+
+select.selection {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-image: url(../img/ui/select-arrow-small.png);
+  background-size: contain;
+  border-radius: 0; }
+
+select.selection::-ms-expand, select.input::-ms-expand {
+  display: none; }
+
+.selection {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 1.5rem;
+  padding: .4375rem 2.5rem .4375rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: left;
+  color: #fff;
+  background: #1E232B; }
 
 .block-gray {
   position: absolute;
@@ -261,12 +404,12 @@ h6.infoitem__caption {
     flex-direction: column; } }
 
 .container-department {
-  background: url("/assets/img/uploads/department-bg.jpg") center 0 no-repeat;
+  background: url(../img/uploads/department-bg.jpg) center 0 no-repeat;
   background-size: cover; }
 
 .section-city-price .container-fluid {
   padding: 0;
-  background: url("/assets/img/uploads/food-bn.jpg") center 0 no-repeat;
+  background: url(../img/uploads/food-bn.jpg) center 0 no-repeat;
   background-size: cover; }
 .section-city-price .container-fluid .text-center {
   padding-top: 80px;
@@ -515,41 +658,41 @@ p:only-child, p:last-child {
   height: 55px; }
 
 .icon-courses-profile {
-  background-image: url("../img/ui/profile.svg"); }
+  background-image: url("../img/icon/profile.svg"); }
 
 .icon-courses-calendar {
-  background-image: url("../img/ui/calendar.svg"); }
+  background-image: url("../img/icon/calendar.svg"); }
 
 .icon-courses-chat {
-  background-image: url("../img/ui/chat.svg"); }
+  background-image: url("../img/icon/chat.svg"); }
 
 .icon-courses-rating {
-  background-image: url("../img/ui/rating.svg"); }
+  background-image: url("../img/icon/rating.svg"); }
 
 [class^="icon-city-"], [class*="icon-city-"] {
   width: 100px;
   height: 100px; }
 
 .icon-city-hamburger {
-  background-image: url("../img/ui/hamburger.svg"); }
+  background-image: url("../img/icon/hamburger.svg"); }
 
 .icon-city-bread {
-  background-image: url("../img/ui/bread.svg"); }
+  background-image: url("../img/icon/bread.svg"); }
 
 .icon-city-water {
-  background-image: url("../img/ui/water.svg"); }
+  background-image: url("../img/icon/water.svg"); }
 
 .icon-city-milk {
-  background-image: url("../img/ui/milk.svg"); }
+  background-image: url("../img/icon/milk.svg"); }
 
 .icon-city-subway {
-  background-image: url("../img/ui/subway.svg"); }
+  background-image: url("../img/icon/subway.svg"); }
 
 .icon-city-bus {
-  background-image: url("../img/ui/bus.svg"); }
+  background-image: url("../img/icon/bus.svg"); }
 
 .icon-city-ticket {
-  background-image: url("../img/ui/ticket.svg"); }
+  background-image: url("../img/icon/ticket.svg"); }
 
 .btn-play {
   display: block;
