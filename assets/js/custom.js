@@ -65,6 +65,25 @@ $(function () {
 });
 
 $(document).ready(function () {
+    $('.header').hcSticky({
+        top: 0,
+    });
+    $('.nav-sticky').hcSticky({
+        top: 150,
+        responsive: {
+            992: {
+                disable: true
+            }
+        }
+    });
+    $('.sticky-sidebar').hcSticky({
+        top: 220,
+        responsive: {
+            992: {
+                disable: true
+            }
+        }
+    });
     $(".pagination").rPage();
 });
 

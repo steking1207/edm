@@ -116,110 +116,114 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="global-mobileMenu"></div>
     <!-- ./global-mobileMenu -->
 
-    <!-- kv-share -->
-    <div id="kv-share"></div>
-    <!-- ./kv-share -->
+    <!-- kv-countries-study -->
+    <div id="kv-countries-study"></div>
+    <!-- ./kv-countries-study -->
 
 <nav class="nav-main">
     <div class="nav-primary">
         <div class="container d-none d-lg-block slick-nav">
             <div class="row no-gutters d-flex">
                 <div class="col-2">
-                    <a class="nav-link" href="study-article.html">留學後記</a>
+                    <a class="nav-link" href="overview.html">總覽</a>
                 </div>
                 <div class="col-2">
-                    <a class="nav-link" href="language-article.html">遊學後記</a>
+                    <a class="nav-link" href="study-des.html">留學概要</a>
                 </div>
                 <div class="col-2">
-                    <a class="nav-link active" href="thanks-edm.html">感謝 ed:m</a>
+                    <a class="nav-link" href="study-courses.html">課程概要</a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="study-rank.html">學校排名</a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="study-recommand-courses.html">推薦課程</a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="study-scholarship.html">獎學金資訊</a>
+                </div>
+            </div>
+            <div class="row no-gutters d-flex">
+                <div class="col-2">
+                    <a class="nav-link active" href="study-accommodation.html">住宿情報</a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="study-visa.html">簽證資訊</a>
                 </div>
             </div>
         </div>
         <div class="d-lg-none">
             <select class="custom-select" onchange="location = this.value;">
-                <option value="study-article.html">留學後記</option>
-                <option value="language-article.html">遊學後記</option>
-                <option value="thanks-edm.html" selected>感謝 ed:m</option>
+                <option value="overview.html">總覽</option>
+                <option value="study-des.html">留學概要</option>
+                <option value="study-courses.html" selected>課程概要</option>
+                <option value="study-rank.html">學校排名</option>
+                <option value="study-recommand-courses.html">推薦課程</option>
+                <option value="study-scholarship.html">獎學金資訊</option>
+                <option value="study-accommodation.html">住宿情報</option>
+                <option value="study-visa.html">簽證資訊</option>
             </select>
         </div>
     </div>
 </nav>
 
 <main class="main">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 my-4">
-                <div class="bs-strong p-6 p-md-8">
-                    <div class="h5 font-weight-bold text-row-2">每當我有問題時，我總是感謝你的回答！</div>
-                    <div class="text-warning">
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                    </div>
-                    <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan</p>
-                    <div class="media">
-                        <div class="user-circle mr-3">
-                            <i class="icon-user"></i>
-                        </div>
-                        <div class="media-body">
-                            <div class="font-weight-bold">Lee Yoon Jung</div>
-                            <div>2018-08-23</div>
-                        </div>
-                    </div>
+    <div class="container-fluid">
+        <div class="container">
+        <div class="row align-items-center no-gutters row-accommodation">
+            <div class="col-12 col-lg-3">
+                <div class="h3 font-weight-bold mb-6 px-6">住宿情報</div>
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link h5 m-0 px-6 py-4 border-bottom active" data-toggle="pill" href="#pills-homestay">寄宿家庭</a>
+                    <a class="nav-link h5 m-0 px-6 py-4 border-bottom" data-toggle="pill" href="#pills-un-dormitory">大學-學生宿舍</a>
+                    <a class="nav-link h5 m-0 px-6 py-4" data-toggle="pill" href="#pills-language-dormitory">語言宿舍-學生宿舍</a>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 my-4">
-                <div class="bs-strong p-6 p-md-8">
-                    <div class="h5 font-weight-bold text-row-2">每當我有問題時，我總是感謝你的回答！</div>
-                    <div class="text-warning">
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                    </div>
-                    <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan</p>
-                    <div class="media">
-                        <div class="user-circle mr-3">
-                            <i class="icon-user"></i>
-                        </div>
-                        <div class="media-body">
-                            <div class="font-weight-bold">Lee Yoon Jung</div>
-                            <div>2018-08-23</div>
+            <div class="col-12 col-lg-9">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-homestay">
+                        <div class="card card-acc">
+                            <img class="card-img" src="../assets/img/uploads/accommodation-image-1.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="card-content">
+                                <div class="h5 font-weight-bold mb-4">寄宿家庭(Homestay, Host Family)</div>
+                                <p>指的是在留學或遊學的期間寄宿於當地家庭與其一起生活的住宿方式，是許多學生在國外讀書時的第一個避風港。寄宿家庭的安排是經過學校嚴格的挑選與審核，包括家庭成員、工作及背景，成為寄宿家庭的理由也因其家庭狀況而有所不同，大致來說可分為兩種。第一，想藉由接待學生了解國外文化並提供給其子女一個國際化的環境，並達到文化及語言交流的目的。通常寄宿家庭會與學生有較多的互動，且可能會邀請學生參與家庭活動；第二，因孩子尚年幼或已成年因而有多餘的房間可出租作為一份收入。此類的寄宿家庭通常僅提供房間及餐點，會提供學生最大的生活自由及隱私空間。</p>
+                                <p>寄宿家庭通常位於郊區的住宅區，其交通距離因國家及城市而不一樣，由於國外的城市面積較廣闊，平均的交通距離約為40分鐘至1小時不等。寄宿家庭的選擇可提出包括，是否可接受寵物、小孩及其他飲食上的限制，於申請寄宿家庭時需要提供給學校作為條件上的塞選。</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 my-4">
-                <div class="bs-strong p-6 p-md-8">
-                    <div class="h5 font-weight-bold text-row-2">每當我有問題時，我總是感謝你的回答！</div>
-                    <div class="text-warning">
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                        <i class="fas fa-xs fa-star"></i>
-                    </div>
-                    <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan</p>
-                    <div class="media">
-                        <div class="user-circle mr-3">
-                            <i class="icon-user"></i>
+
+                    <div class="tab-pane fade" id="pills-un-dormitory">
+                        <div class="card card-acc">
+                            <img class="card-img" src="../assets/img/uploads/accommodation-image-2.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="card-content">
+                                <div class="h5 font-weight-bold mb-4">大學-學生宿舍</div>
+                                    <p>大學所提供的宿舍選項，通常分為學生宿舍(Dormitary)及學生公寓(Apartment)兩種。學生宿舍(Dormitary)多屬於大學校內宿舍，學校會提供最基本的房間設備，通常衛浴設備為公用，少為2-4人；多則屬於Hallway需與同一層的同學一起共用。校內學生宿舍多數不會提供廚房設備，住宿費可選擇含餐費的選項，可於校內餐廳用餐或額外購買參卷或餐卡。學生公寓(Apartment)與學生宿舍最大不同是除了基本的房間設備外，會與同一戶的同學共用廚房及客廳而不提供餐食，多數廁所也為共用，少數房型有私人衛浴，預定時需多加注意。</p>
+                                    <p>學生公寓與學校的距離相對近，其交通距離因國家及城市不同，平均的交通時間約為20-30分鐘不等，而學生宿舍位於校園內，多數可步行上學，少數則需要搭乘學校接駁車。</p>
+                                    <p>學生宿舍最大的優點為有較多的社交生活，容易認識同住在宿舍中的同學，除非特殊要求，一般都事在入住之後才會知道室友，而室友的安排多以不同國籍住一間，以達到文化交流及練習英文的目的。</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="media-body">
-                            <div class="font-weight-bold">Lee Yoon Jung</div>
-                            <div>2018-08-23</div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-language-dormitory">
+                        <div class="card card-acc">
+                            <img class="card-img" src="../assets/img/uploads/accommodation-image-3.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <div class="card-content">
+                                <div class="h5 font-weight-bold mb-4">語言學校-學生宿舍</div>
+                                    <p>語言學校的學生宿舍多座落於鄰近語言學校的市中心，多數為學校與旅館或當地地產公司合作之住宿選項，此種宿舍裡多為其他語言學校就讀的學生、當地的大學生及一般旅客；少數語言學校會有獨立經營的學生公寓。語言學校的宿舍房型選擇較多元，學生可選擇單人房、雙人房、是否有私人衛浴或是選擇有含餐宿舍，居住在學校宿舍的學生，自主程度及自由度較大，多數宿舍也位於生活機能相當完善的地方。</p>
+                                    <p>學校宿舍與學校的距離較近，其交通距離因國家及城市不同，平均的交通時間約為20-40分鐘不等，適合可獨立自主生活的學生。</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="mt-10">
-            <!-- nav-pagination -->
-            <div id="nav-pagination"></div>
-            <!-- ./nav-pagination -->
-        </nav>
+        </div>
     </div>
 </main>
 
@@ -245,18 +249,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="../assets/js/jquery/jquery.scrollbar.min.js?v=1537528068"></script>
 	<script src="../assets/js/jquery/owl.carousel.min.js?v=1537528068"></script>
 	<script src="../assets/js/main.js?v=1538384436"></script>
-	<script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
 
     <!-- module include -->
     <script src="../assets/js/function/module.js"></script>
     <script>
-        $("#kv-share").load("../module/kv-share.html");
-        $("#nav-pagination").load("../module/nav-pagination.html");
+        $("#kv-countries-study").load("../module/kv-countries-study.html");
     </script>
 
     <!-- single -->
     <script>
+        $('.slick-nav').slick({
+            initialSlide: 1,
+        });
         $.home();
     </script>
+
     </body>
 </html>

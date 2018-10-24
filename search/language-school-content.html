@@ -724,21 +724,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="main pt-0">
 
     <div class="container py-8">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-auto">
-                        <div class="avatar"></div>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5">
+                <div class="slick-gallery">
+                    <img class="img-fluid" src="../assets/img/uploads/school-content-image-1.jpg" alt="">
+                    <img class="img-fluid" src="../assets/img/uploads/school-content-image-1.jpg" alt="">
+                    <img class="img-fluid" src="../assets/img/uploads/school-content-image-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-6 mt-md-0">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col">
+                        <img class="img-fluid" src="../assets/img/uploads/school-logo.png" alt="">
                     </div>
-                    <div class="col text-center text-md-left mt-6 mt-md-0">
-                        <div class="h4 font-weight-bold">Michael Wu</div>
-                    </div>
-                    <div class="col text-right order-first order-md-last">
-                        <a class="btn-edit text-muted" href="">
-                            <i class="fas fa-lg fa-pencil-alt"></i>
+                    <div class="col text-right">
+                        <a class="btn btn-outline-secondary btn-like" href="javascript:void();">
+                            <i class="far fa-heart"></i> 加入收藏
                         </a>
                     </div>
                 </div>
+                <div class="h3 font-weight-bold my-4">Kaplan International English, London (Covent Garden)</div>
+                <div class="text-muted mb-3">
+                    <i class="fas fa-sm fa-map-marker-alt"></i> 英國倫敦
+                </div>
+                <p class="text-row-3">
+                    一所國際集體學校只有10個地區，包括強化英語，商務英語和考試準備課程。
+                </p>
             </div>
         </div>
     </div>
@@ -763,91 +774,140 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="container pt-8 pt-md-12">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="list-school">
-                    <div class="box-school mb-4">
-                        <div class="row no-gutters box">
-                            <div class="col-12 col-md-5 slick-gallery mb-4 mb-md-0">
-                                <img class="img-fluid" src="../assets/img/uploads/school-images-1.jpg" alt="">
-                                <img class="img-fluid" src="../assets/img/uploads/school-images-2.jpg" alt="">
-                                <img class="img-fluid" src="../assets/img/uploads/school-images-3.jpg" alt="">
-                            </div>
-                            <div class="col-12 col-md-7 flex-column d-flex pl-0 pl-md-4">
-                                <div class="mb-auto">
-                                    <div class="row justify-content-between no-gutters">
-                                        <div class="col-10">
-                                        <div class="h5 font-weight-bold">
-                                            British Study Centres School of English (BSC), London Hampstead
-                                        </div>
-                                        </div>
-                                        <div class="col text-right">
-                                            <div class="custom-control custom-checkbox d-inline-block">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck-1">
-                                                <label class="custom-control-label" for="customCheck-1"></label>
-                                            </div>
-                                            <a class="btn-like" href="javascript:void();">
-                                                <i class="far fa-fw fa-heart text-muted"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                <div class="text-muted my-1">
-                                    <i class="fas fa-sm fa-map-marker-alt"></i> 英國倫敦
-                                </div>
-                                <p class="text-row-3">
-                                    一所國際集體學校<br>
-                                    只有10個地區<br>
-                                    包括強化英語，商務英語和考試準備課程。
-                                </p>
-                                </div>
-                                <div class="mt-4 md-md-auto d-block d-md-flex justify-content-between">
-                                    <a class="btn btn-more btn-primary" href="">了解更多</a>
-                                    <a class="btn-search-course" data-toggle="collapse" href="#collapse-school-1">課程介紹</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse" id="collapse-school-1">
-                            <table class="table table-rwd m-0">
+            <div class="col-12 col-md-8">
+                <div class="h5 font-weight-bold mb-6">學校設施/服務</div>
+                <div class="row">
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-wifi.svg" alt="">
+                        <div class="mt-2">Free WIFI</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-library.svg" alt="">
+                        <div class="mt-2">Library</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-book.svg" alt="">
+                        <div class="mt-2">Self study area</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-computer.svg" alt="">
+                        <div class="mt-2">Interactive screens</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-weekend.svg" alt="">
+                        <div class="mt-2">Student Lounge</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-fitness.svg" alt="">
+                        <div class="mt-2">GYM</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-cutlery.svg" alt="">
+                        <div class="mt-2">Student kitchen</div>
+                    </div>
+                    <div class="col-4 col-md-2 my-2 text-center">
+                        <img class="img-fluid" src="../assets/img/icon/school-service-gamepad.svg" alt="">
+                        <div class="mt-2">IT Lounge</div>
+                    </div>
+                </div>
+                <hr class="my-8">
+                <div class="h5 font-weight-bold mb-6">基本信息</div>
+                <div class="row mb-4">
+                    <div class="col font-weight-bold text-muted">種類</div>
+                    <div class="col-8">遊學</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">設立年度</div>
+                    <div class="col-8">1992</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">學生總人數</div>
+                    <div class="col-8">100</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">主要國籍</div>
+                    <div class="col-8">中國24％，韓國10％，法國9％，意大利6％</div>
+                </div>
+                <div class="readmore">
+                    卡普蘭國際英語是一個具有悠久歷史和經驗，最有聲望的教育機構在完成有效的K +學習系統和95教育環境的最高級別的來自不同國家的超過150年的學生超出了線上和線下的界限，成立於1938年75000人， ％的評價很高。學校位於美國，英國，澳大利亞，加拿大，新西蘭，愛爾蘭5國在市中心和著名的大學校園裡長期和短期英語課程，考試準備，大學預備課程和課程的初中不同條件鍵和需求，從英語語言課程和教育服務。您可以體驗卡普蘭國際英語獨特的語言培訓和海外留學項目，並獲得各國官方教育協會的認證。Lorem ipsum dolor sit amet, cu nobis feugait argumentum per, no nulla quidam dolorem mei. Nec suas labitur ne. An eam consulatu evertitur, esse mei. Nec suas labitur ne. An eam cons
+                </div>
+                <hr class="my-8">
+                <div class="h5 font-weight-bold mb-6">國籍比例</div>
+                <div class="mb-6">
+                    <img class="img-fluid" src="../assets/img/uploads/chart-pie.png" alt="">
+                </div>
+                <hr class="my-8">
+                <div class="h5 font-weight-bold mb-6">住宿服務</div>
+                <table class="table table-rwd table-striped m-0">
                                 <thead>
-                                    <tr class="bg-light">
-                                        <th>課程</th>
-                                        <th class="text-center">價格</th>
-                                        <th class="text-center">時程</th>
-                                        <th>&nbsp;</th>
+                                    <tr class="">
+                                        <th>住宿種類</th>
+                                        <th>住宿類型</th>
+                                        <th class="text-center">每週價格</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="align-middle" data-label="課程">General English_Standard</td>
-                                        <td class="text-md-center align-middle" data-label="價格">£ 100,000</td>
-                                        <td class="text-md-center align-middle" data-label="時程">為期16週</td>
-                                        <td>
-                                            <a class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#modal-price">索取報價</a>
-                                        </td>
+                                        <td class="td-border" data-label="住宿種類">Homestay</td>
+                                        <td class="" data-label="住宿類型">Standard Zone3,4 (Single/No Private Bath Room)</td>
+                                        <td class="text-lg-center" data-label="每週價格">£ 170</td>
                                     </tr>
                                     <tr>
-                                        <td class="align-middle">General English_Standard</td>
-                                        <td class="text-md-center align-middle">£ 100,000</td>
-                                        <td class="text-center align-middle">為期16週</td>
-                                        <td>
-                                            <a class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#modal-price">索取報價</a>
-                                        </td>
+                                        <td class="td-border" data-label="住宿種類">Dormitory</td>
+                                        <td class="" data-label="住宿類型">Standard Zone3,4 (Single/No Private Bath Room)</td>
+                                        <td class="text-lg-center" data-label="每週價格">£ 170</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-border" data-label="住宿種類">Studio</td>
+                                        <td class="" data-label="住宿類型">Standard Zone3,4 (Single/No Private Bath Room)</td>
+                                        <td class="text-lg-center" data-label="每週價格">£ 170</td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="border p-6 sticky-sidebar mt-6 mt-md-0">
+                    <div class="font-weight-bold mb-2">學校</div>
+                    <p>
+                        <a class="text-dark" href="http://www.kaplaninternational.com/" target="_blank">
+                            http://www.kaplaninternational.com/
+                        </a>
+                    </p>
+                    <div class="font-weight-bold mb-2">學校SNS</div>
+                    <div class="mb-5 d-flex">
+                        <a class="btn-rounded btn-dark mr-2" href="" target="_blank">
+                            <i class="fab fa-fw fa-xs fa-youtube"></i>
+                        </a>
+                        <a class="btn-rounded btn-dark" href="" target="_blank">
+                            <i class="fab fa-fw fa-xs fa-twitter"></i>
+                        </a>
                     </div>
-                </div>
-                <nav class="mt-10">
-                        <!-- nav-pagination -->
-                        <div id="nav-pagination"></div>
-                        <!-- ./nav-pagination -->
-                    </nav>
+                    <div class="font-weight-bold mb-2">學校地址</div>
+                    <p>3-4倫敦南安普頓廣場，WC1A 2DA</p>
+                    <div class="font-weight-bold mb-2">學校連繫</div>
+                    <p>
+                        44 20 7404 3080<br>44 20 7404 3443
+                    </p>
+                    <div class="mb-5 d-none d-lg-block">
+                        <a class="btn btn-outline-primary" href="">看3D視圖</a>
+                    </div>
+                    <div class="map mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.791600814514!2d121.54837831500637!3d25.04114548396904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abc5720b02af%3A0x4a07bd88b9350504!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5b-g5a2d5p2x6Lev5Zub5q61MTY26Jmf!5e0!3m2!1szh-TW!2stw!4v1538038364722" width="100%" height="100%" frameborder="0" style="border:0; height: 200px;" allowfullscreen></iframe>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <a class="btn btn-block btn-primary" href="javascript:void();" data-toggle="modal" data-target="#modal-price">索取報價</a>
+                    </div>
 
+                </div>
             </div>
         </div>
     </div>
 
-
+    <div class="nav-mobile-search">
+        <a class="btn btn-block btn-outline-primary" href="">
+            3D視圖
+        </a>
+        <a class="btn btn-block btn-primary" href="javascript:void();" data-toggle="modal" data-target="#modal-price">
+            索取報價
+        </a>
+    </div>
 </main>
 
     <!-- global-footer -->
@@ -855,6 +915,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- ./global-footer -->
 
 </div>
+
+    <!-- modal-索取報價 -->
+    <div class="modal-search-price"></div>
+
+    <!-- modal-states -->
+    <div class="modal-states"></div>
+    <!-- ./modal-states -->
 
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W53SKVJ"
@@ -868,6 +935,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="../assets/js/vendor/jquery.slick.min.js"></script>
 	<script src="../assets/js/vendor/jquery.hc-sticky.min.js"></script>
 	<script src="../assets/js/vendor/jquery.pushy.min.js"></script>
+	<script src="../assets/js/vendor/jquery.readmore.min.js"></script>
 	<script src="../assets/js/jquery/jquery.scrollbar.min.js?v=1537528068"></script>
 	<script src="../assets/js/jquery/owl.carousel.min.js?v=1537528068"></script>
     <script src="../assets/js/main.js?v=1538384436"></script>
@@ -875,20 +943,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- module include -->
     <script src="../assets/js/function/module.js"></script>
+    <script>
+        $(".modal-search-price").load("../module/modal-search-price.html");
+        $(".modal-states").load("../module/modal-states.html");
+    </script>
 
     <!-- single -->
     <script>
-        jQuery(document).ready(function($) {
-            $('.header').hcSticky({
-                top: 0,
-
-                followScroll: false,
+        $('.readmore').readmore({
+                speed: 500,
+                collapsedHeight: 120,
+                moreLink: '<p class="text-right mt-4"><a class="text-dark font-weight-bold" href="#">展開 <i class="fa fa-chevron-down ml-1"></i></a></p>',
+                lessLink: '<p class="text-right mt-4"><a class="text-dark font-weight-bold" href="#">收合 <i class="fa fa-chevron-up ml-1"></i></a></p>',
+                embedCSS: false
             });
-            $('.nav-sticky').hcSticky({
-                top: 150,
-
-            });
-        });
         $.home();
     </script>
     </body>

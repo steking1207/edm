@@ -724,159 +724,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="main pt-0">
 
     <div class="container py-8">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-auto">
-                        <div class="avatar">
-                            <input id="file" type="file" onchange="upload(this)" class="d-none">
-                            <a class="btn-upload" href="javascript:void();" onclick="file.click()">
-                                <i class="fas fa-2x fa-camera"></i>
-                                <div>檔案上傳</div>
-                            </a>
-                        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5">
+                <div class="slick-gallery">
+                    <img class="img-fluid" src="../assets/img/uploads/school-content-image-1.jpg" alt="">
+                    <img class="img-fluid" src="../assets/img/uploads/school-content-image-1.jpg" alt="">
+                    <img class="img-fluid" src="../assets/img/uploads/school-content-image-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-6 mt-md-0">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col">
+                        <img class="img-fluid" src="../assets/img/uploads/school-logo.png" alt="">
                     </div>
-                    <div class="col my-6 my-md-0">
-                        <input type="text" class="form-control form-control-lg mx-auto mx-md-0 px-0 font-weight-bold w-auto text-center text-md-left" value="Michael Wu">
-                    </div>
-                    <div class="col-12 col-md-auto text-right">
-                        <div class="row no-gutters">
-                                    <div class="col-12 col-md-6 mb-2 px-1">
-                                        <a class="btn btn-block btn-outline-primary" href="">取消</a>
-                                    </div>
-                                    <div class="col-12 col-md-6 mb-2 px-1 order-first order-md-last">
-                                        <a class="btn btn-block btn-primary" href="">儲存</a>
-                                    </div>
-                                </div>
+                    <div class="col text-right">
+                        <a class="btn btn-outline-secondary btn-like" href="javascript:void();">
+                            <i class="far fa-heart"></i> 加入收藏
+                        </a>
                     </div>
                 </div>
+                <div class="h3 font-weight-bold my-4">Kaplan International English, London (Covent Garden)</div>
+                <div class="text-muted mb-3">
+                    <i class="fas fa-sm fa-map-marker-alt"></i> 英國倫敦
+                </div>
+                <p class="text-row-3">
+                    一所國際集體學校只有10個地區，包括強化英語，商務英語和考試準備課程。
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="nav-secondary border-0">
+    <div class="nav-secondary nav-sticky border-0">
         <div class="container">
             <div class="nav-light">
-                <ul class="nav justify-content-center">
+                <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="member-info.html">帳戶</a>
+                        <a class="nav-link active" href="study-school-content.html">學校介紹</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="save-school-list.html">收藏頁面</a>
+                        <a class="nav-link" href="study-school-course.html">課程</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="container pt-12">
+    <div class="container pt-8 pt-md-12">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="border p-6">
-                    <form>
-                        <div class="row">
-                            <div class="col-12 col-md-9">
-                        <div class="form-group row">
-                            <label class="col-5 col-sm-3 col-form-label text-muted">手機號碼</label>
-                            <div class="col-7 col-sm-9">
-                                <input type="text" class="form-control w-auto">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-5 col-sm-3 col-form-label text-muted">電子郵件</label>
-                            <div class="col-7 col-sm-9">
-                                <input type="email" class="form-control w-auto">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-5 col-sm-3 col-form-label text-muted">密碼</label>
-                            <div class="col-7 col-sm-9">
-                                <a class="btn btn-outline-primary" href="" data-toggle="modal" data-target="#modal-pw-change">更改密碼</a>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-5 col-sm-3 col-form-label text-muted">想去的國家</label>
-                            <div class="col-7 col-sm-9">
-                                <div class="form-row">
-                                                <div class="col-12 col-sm-3">
-                                                <div class="custom-control custom-checkbox my-2">
-                                                    <input type="checkbox" class="custom-control-input " id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">英國</label>
-                                                </div>
-                                                </div>
-                                                <div class="col-12 col-sm-3">
-                                                <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">加拿大</label>
-                                                </div>
-                                                </div>
-                                                <div class="col-12 col-sm-3">
-                                                    <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">美國</label>
-                                                </div>
-                                                </div>
-                                                <div class="col-12 col-sm-3">
-                                                <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">澳洲</label>
-                                                </div>
-                                                </div>
-                                            </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-5 col-sm-3 col-form-label text-muted">興趣課程</label>
-                            <div class="col-7 col-sm-9">
-                                <div class="form-row">
-                                                <div class="col-12 col-sm-4 col-md-3">
-                                                    <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                        <input type="checkbox" class="custom-control-input " id="customCheck-city-all">
-                                                        <label class="custom-control-label w-100" for="customCheck-city-all">語言</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-4 col-md-3">
-                                                    <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                        <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                        <label class="custom-control-label w-100" for="customCheck-city-all">出國留學</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-4 col-md-3">
-                                                    <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                        <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                        <label class="custom-control-label w-100" for="customCheck-city-all">學習藝術</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-5 col-sm-3 col-form-label text-muted">預計出發日</label>
-                            <div class="col-7 col-sm-9">
-                                <p class="form-control-plaintext">
-                                    <input type="text" class="form-control w-auto">
-                                </p>
-                            </div>
-                        </div>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <div class="row no-gutters">
-                                    <div class="col-12 col-md-6 mb-2 px-1">
-                                        <a class="btn btn-block btn-outline-primary" href="">取消</a>
-                                    </div>
-                                    <div class="col-12 col-md-6 mb-2 px-1 order-first order-md-last">
-                                        <a class="btn btn-block btn-primary" href="">儲存</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+            <div class="col-12 col-md-8">
+                <div class="h5 font-weight-bold mb-6">基本信息</div>
+                <div class="row mb-4">
+                    <div class="col font-weight-bold text-muted">種類</div>
+                    <div class="col-8">遊學</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">設立年度</div>
+                    <div class="col-8">1992</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">世界大學排名</div>
+                    <div class="col-8">100</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">年間平均生活費(包含住宿)</div>
+                    <div class="col-8">£ 170</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col font-weight-bold text-muted">獎學金以及學費支援情報</div>
+                    <div class="col-8">Lorem ipsum dolo</div>
+                </div>
+                <hr class="my-8">
+                <p>
+                    <strong>學校介紹</strong><br>
+                    它是牛津最好的學校之一，擁有高標準的教師和關懷。即使對那些誰瞄準英國大學說，學校的學生為中心的工作和haejugo提供最好的學習環境，讓學生更好的信息，直接主持了英國大學的情況介紹一點也不為過。成立於1957年，是英國GCSE，A-Level的，以及知識積累，隨著歲月的運行基礎的二次加工，為外國學生碩士預科課程，通過高等教育的水平參加學生進入英國頂尖大學它以成功的學校而聞名。
+                </p>
+                <p>
+                    <strong>學校介紹</strong><br>
+                    它是牛津最好的學校之一，擁有高標準的教師和關懷。即使對那些誰瞄準英國大學說，學校的學生為中心的工作和haejugo提供最好的學習環境，讓學生更好的信息，直接主持了英國大學的情況介紹一點也不為過。成立於1957年，是英國GCSE，A-Level的，以及知識積累，隨著歲月的運行基礎的二次加工，為外國學生碩士預科課程，通過高等教育的水平參加學生進入英國頂尖大學它以成功的學校而聞名。
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="border p-6 sticky-sidebar mt-6 mt-md-0">
+                    <div class="font-weight-bold mb-2">學校</div>
+                    <p>
+                        <a class="text-dark" href="http://www.kaplaninternational.com/" target="_blank">
+                            http://www.kaplaninternational.com/
+                        </a>
+                    </p>
+                    <div class="font-weight-bold mb-2">學校SNS</div>
+                    <div class="mb-5 d-flex">
+                        <a class="btn-rounded btn-dark mr-2" href="" target="_blank">
+                            <i class="fab fa-fw fa-xs fa-youtube"></i>
+                        </a>
+                        <a class="btn-rounded btn-dark" href="" target="_blank">
+                            <i class="fab fa-fw fa-xs fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="font-weight-bold mb-2">學校地址</div>
+                    <p>3-4倫敦南安普頓廣場，WC1A 2DA</p>
+                    <div class="font-weight-bold mb-2">學校連繫</div>
+                    <p>
+                        44 20 7404 3080<br>44 20 7404 3443
+                    </p>
+                    <div class="mb-5 d-none d-lg-block">
+                        <a class="btn btn-outline-primary" href="javascript:void();">學校指南</a>
+                    </div>
+                    <div class="map mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.791600814514!2d121.54837831500637!3d25.04114548396904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abc5720b02af%3A0x4a07bd88b9350504!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5b-g5a2d5p2x6Lev5Zub5q61MTY26Jmf!5e0!3m2!1szh-TW!2stw!4v1538038364722" width="100%" height="100%" frameborder="0" style="border:0; height: 200px;" allowfullscreen></iframe>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <a class="btn btn-block btn-primary" href="javascript:void();">免費諮詢</a>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-
+    <div class="nav-mobile-search">
+        <a class="btn btn-block btn-outline-primary" href="javascript:void();">
+            學校指南
+        </a>
+        <a class="btn btn-block btn-primary" href="javascript:void();">
+            免費諮詢
+        </a>
+    </div>
 </main>
 
     <!-- global-footer -->
@@ -885,42 +853,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </div>
 
-<!-- 更改密碼 -->
-<div class="modal modal-responsive fade" id="modal-pw-change" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="fas fa-sm fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="px-10 pb-10">
-                    <div class="h5 font-weight-bold mb-6 text-center">更改您的密碼</div>
-                    <div class="form-group my-6 text-left">
-                        <label class="text-muted">舊密碼</label>
-                        <input type="password" class="form-control" required>
-                        <div class="text-right mt-2">
-                            <a class="font-weight-bold" href="">忘記密碼?</a>
-                        </div>
-                    </div>
-                    <div class="form-group my-6 text-left">
-                        <label class="text-muted">新密碼</label>
-                        <input type="password" class="form-control" required>
-                    </div>
-                    <div class="form-group my-6 text-left">
-                        <label class="text-muted">確認密碼</label>
-                        <input type="password" class="form-control" required>
-                    </div>
-                    <div class="text-center">
-                        <a class="btn btn-primary px-10" href="javascript:void();" data-dismiss="modal">重新設定</a>
-                    </div>
+    <!-- modal-索取報價 -->
+    <div class="modal-search-price"></div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- modal-states -->
+    <div class="modal-states"></div>
+    <!-- ./modal-states -->
 
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W53SKVJ"
@@ -942,16 +880,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- module include -->
     <script src="../assets/js/function/module.js"></script>
+    <script>
+        $(".modal-search-price").load("../module/modal-search-price.html");
+        $(".modal-states").load("../module/modal-states.html");
+    </script>
 
     <!-- single -->
     <script>
-        function upload(e) {
-            var file = e.files[0];
-            if (!file) {
-                return;
-            }
-            e.value = '';
-        }
+        $('.readmore').readmore({
+                speed: 500,
+                collapsedHeight: 120,
+                moreLink: '<p class="text-right mt-4"><a class="text-dark font-weight-bold" href="#">展開 <i class="fa fa-chevron-down ml-1"></i></a></p>',
+                lessLink: '<p class="text-right mt-4"><a class="text-dark font-weight-bold" href="#">收合 <i class="fa fa-chevron-up ml-1"></i></a></p>',
+                embedCSS: false
+            });
         $.home();
     </script>
     </body>
