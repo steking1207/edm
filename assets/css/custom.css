@@ -2654,6 +2654,14 @@ a.text-dark:hover, a.text-dark:focus {
   background: #6ec12d;
   color: #fff; }
 
+.btn-collapse-arrow[aria-expanded="true"]:after {
+  content: "\f077" !important; }
+.btn-collapse-arrow[aria-expanded="false"]:after {
+  content: "\f078" !important; }
+.btn-collapse-arrow:after {
+  margin-left: .5rem;
+  content: "\f078" !important; }
+
 [class^="icon-"], [class*="icon-"] {
   position: relative;
   display: inline-block;
@@ -2980,6 +2988,9 @@ a.text-dark:hover, a.text-dark:focus {
 .pushy [data-toggle="collapse"]:after {
   content: ""; }
 
+@media (max-width: 991.98px) {
+  .collapse-md-show {
+    display: block !important; } }
 .badge-outline-secondary {
   font-size: 1rem;
   font-weight: bold;
