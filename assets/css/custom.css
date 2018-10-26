@@ -492,8 +492,20 @@ select.selection::-ms-expand, select.input::-ms-expand {
   .slider-office .owl-stage-outer {
     margin-top: 50px; } }
 
-.readmore {
+.expand {
   overflow: hidden; }
+
+.readmore .collapse:not(.show) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical; }
+.readmore .collapsing {
+  min-height: 42px !important; }
+.readmore a.collapsed:before {
+  content: '展開'; }
+.readmore a:not(.collapsed):before {
+  content: '收合'; }
 
 .kv {
   position: relative;
@@ -2227,7 +2239,7 @@ html.mobile .line__desktop {
 .table-striped thead {
   border-bottom: 2px solid #adb5bd; }
 
-.table-rwd tbody td {
+.table-noborder tbody td {
   border: 0 !important; }
 
 @media (max-width: 991.98px) {
@@ -2566,7 +2578,11 @@ p:only-child, p:last-child {
 
 .custom-select {
   -moz-appearance: window;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  padding-left: 0;
+  background-position: 100% center; }
+.nav-main .custom-select {
+  background-position: 98% center; }
 
 .form-control {
   border-left-width: 0;

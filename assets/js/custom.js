@@ -19,13 +19,6 @@ $('.slick-gallery').slick({
     dots:true,
 });
 
-$('.readmore').readmore({
-    speed: 500,
-    collapsedHeight: 120,
-    moreLink: '<p class="text-right mt-4"><a class="text-dark font-weight-bold" href="#">展開 <i class="fa fa-chevron-down ml-1"></i></a></p>',
-    lessLink: '<p class="text-right mt-4"><a class="text-dark font-weight-bold" href="#">收合 <i class="fa fa-chevron-up ml-1"></i></a></p>',
-    embedCSS: false
-});
 //        $(function(){
 //            $(".dropdown-menu a.dropdown-item").click(function(){
 //                $(this).parents(".dropdown").find('.dropdown-toggle').text($(this).text());
