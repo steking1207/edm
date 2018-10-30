@@ -351,7 +351,7 @@ $.common();
 var getPath = window.location.pathname;
 
 // add count effect
-if (getPath === '/') {
+//if (getPath === '/') {
   $(window).on('scroll', function () {
     if ($(window).scrollTop() >= $('#section2').offset().top) {
 
@@ -362,7 +362,7 @@ if (getPath === '/') {
     } else {}
 
   });
-}
+//}
 
 var counter = function (number) {
 
@@ -387,9 +387,9 @@ var counter = function (number) {
 
 
 // add typing effect
-if (getPath === '/about') {
+//if (getPath === '/about') {
   consoleText(['開始', '選擇'], 'text', ['#6EC12D']);
-}
+//}
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

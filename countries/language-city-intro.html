@@ -40,7 +40,6 @@
     <meta name="keywords" content="edm,遊學,留學,遊學諮詢,留學諮詢,遊學代辦,留學代辦,遊學規劃,留學規劃,遊學英文,留學英文,免費遊學諮詢,免費留學諮詢,遊學國家,遊學城市,留遊學手冊,語言課程,遊學獎金,學費優惠,機票補助,海外辦事處,學費保障制度,學校優惠,短期遊學, working holiday,打工遊學,有薪實習,加拿大學院,企業實習,英國遊學,英國留學,加拿大遊學,加拿大留學,美國遊學,美國留學,澳洲遊學,紐西蘭遊學,菲律賓遊學,馬爾他遊學,紐西蘭遊學">
     <link rel="stylesheet" href="../assets/css/main.css?v=1538540904"  />
 	<link rel="stylesheet" href="../assets/css/jquery.scrollbar.css?v=1537528068"  />
-	<link rel="stylesheet" href="../assets/css/owl.carousel.css?v=1537528068"  />
 	<link rel="stylesheet" href="../assets/css/bootstrap.css"  />
 	<link rel="stylesheet" href="../assets/css/custom.css"  />
 
@@ -202,9 +201,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6">
-                    <div class="text-center">
-                        <img class="img-fluid mb-6 mb-lg-0" src="../assets/img/uploads/city-images-1.jpg" alt="">
-                    </div>
+                    <figure class="mb-6 mb-lg-0 text-center">
+                        <img class="img-fluid" src="../assets/img/uploads/city-images-1.jpg" alt="">
+                    </figure>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="h3 font-weight-bold mb-3">倫敦</div>
@@ -219,9 +218,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <div class="text-center">
-                    <img class="img-fluid mb-6 mb-lg-0" src="../assets/img/uploads/city-images-2.jpg" alt="">
-                </div>
+                <figure class="mb-6 mb-lg-0 text-center">
+                    <img class="img-fluid" src="../assets/img/uploads/city-images-2.jpg" alt="">
+                </figure>
             </div>
             <div class="col-12 col-md-6 order-md-first">
                 <div class="h3 font-weight-bold mb-3">氣候</div>
@@ -234,9 +233,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <div class="text-center">
-                    <img class="img-fluid mb-6 mb-lg-0" src="../assets/img/uploads/city-images-3.jpg" alt="">
-                </div>
+                <figure class="mb-6 mb-lg-0 text-center">
+                    <img class="img-fluid" src="../assets/img/uploads/city-images-3.jpg" alt="">
+                </figure>
             </div>
             <div class="col-12 col-md-6">
                 <div class="h3 font-weight-bold mb-3">文化</div>
@@ -250,14 +249,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <div class="card mb-6 mb-lg-0">
-                    <img class="img-fluid" src="../assets/img/uploads/city-images-4.jpg" alt="">
-                    <div class="card-img-overlay d-flex flex-column justify-content-center">
-                        <a class="btn-play mx-auto" href="">
-                            <i class="fas fa-play"></i>
-                        </a>
-                    </div>
-                </div>
+                <figure class="mb-6 mb-lg-0 text-center">
+                    <a class="video-play" href="javascript:void();" data-toggle="modal" data-target=".modal-video" data-theVideo="https://www.youtube.com/embed/BjybZuSIypQ">
+                        <div class="icon-player">
+                            <i class="fas fa-play text-white"></i>
+                        </div>
+                        <img class="img-fluid" src="../assets/img/uploads/city-images-3.jpg" alt="">
+                    </a>
+                </figure>
             </div>
             <div class="col-12 col-md-6 order-md-first">
                 <div class="h3 font-weight-bold mb-3">交通</div>
@@ -274,7 +273,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="h3 font-weight-bold">物價</div>
             </div>
         </div>
-        <div class="container expand">
+        <div class="container readmore-expand">
             <div class="row">
                 <div class="col-12 col-md-4 my-3 my-md-4">
                     <div class="bs p-16 bg-white text-center">
@@ -440,6 +439,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </div>
 
+    <div class="modal modal-video fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    &nbsp;
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="450" frameborder="0" marginwidth="0" marginheight="0" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W53SKVJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -468,7 +483,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         $('.slick-nav').slick();
         $.home();
-        new Readmore('.expand', {
+//        new Readmore('.expand', {
+        $('.readmore-expand').readmore({
             speed: 500,
             collapsedHeight: 350,
             moreLink: '<p class="text-center"><a class="btn btn-primary" href="#">展開</a></p>',

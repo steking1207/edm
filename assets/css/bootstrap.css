@@ -2947,7 +2947,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   border: 0 solid #ddd; }
 .page-link:hover {
   z-index: 2;
-  color: #4b831f;
+  color: #333;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #ddd; }
