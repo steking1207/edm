@@ -215,6 +215,29 @@ var EDM = {
         };
 
         switch (true) {
+            case ($that.hasClass('js-carousel-news')):
+            opts.center = true;
+            opts.responsiveClass = true;
+            opts.autoplay = true;
+            opts.autoplayHoverPause = true;
+            opts.autoplayTimeout = 3800;
+            opts.dots = true;
+            opts.responsive = {
+              0: {
+                items: 1
+              },
+
+              576: {
+                items: 3
+              },
+
+              992: {
+                items: 5
+              }
+            };
+
+            break;
+
           case ($that.hasClass('review-grp')):
             opts.center = true;
             opts.responsiveClass = true;

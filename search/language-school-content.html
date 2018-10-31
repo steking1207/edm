@@ -824,13 +824,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="col font-weight-bold text-muted">主要國籍</div>
                     <div class="col-8">中國24％，韓國10％，法國9％，意大利6％</div>
                 </div>
-                <div class="readmore">
-                    <div class="collapse mb-2" id="collapse-readmore-1">
+                <div class="readmore-expand">
+                    <div class="collapse1 mb-2" id="collapse-readmore-1">
                         一所國際集體學校，在全球範圍內擁有強大的英語語言學習課程，在英格蘭，只有10個地區，11個中心，作為龐大的私立語言學校，包括強化英語，商務英語和考試準備課程。Lorem ipsum dolor sit amet, cu nobis feugait argumentum per, no nulla quidam dolorem mei. Nec suas labitur ne. Lorem ipsum dolor sit amet, cu nobis feugait argume Lorem ipsum dolor sit amet, cu nobis feugait argumentum per, no nulla quidam dolorem mei. Nec suas labitur ne. Lorem ipsum dolor sit amet, cu nobis feugait argumeLorem ipsum dolor sit amet, cu nobis feugait argumentum per, no nulla quidam dolorem mei. Nec suas labitur ne. Lorem ipsum dolor sit amet, cu nobis feugait argumeLorem ipsum dolor sit amet, cu nobis feugait argumentum per, no nulla quidam dolorem mei. Nec suas labitur ne. Lorem ipsum dolor sit amet, cu nobis feugait argumeLorem ipsum dolor sit amet, cu nobis feugait argumentum per, no nulla quidam dolorem mei. Nec suas labitur ne. Lorem ipsum dolor sit amet, cu nobis feugait argume
                     </div>
+<!--
                     <div class="text-right">
-                        <a class="btn-collapse-arrow d-inline-block text-dark" data-toggle="collapse" href="#collapse-readmore-1" aria-expanded="false"></a>
+                        <a class="collapse-arrow-v d-inline-block text-dark" data-toggle="collapse" href="#collapse-readmore-1" aria-expanded="false"></a>
                     </div>
+-->
                 </div>
                 <hr class="my-8">
                 <div class="h5 font-weight-bold mb-6">國籍比例</div>
@@ -952,7 +954,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
 
     <!-- single -->
+    <script src="../assets/js/vendor/jquery.readmore.min.js"></script>
     <script>
+        $('.readmore-expand').readmore({
+            speed: 500,
+            collapsedHeight: 100,
+            moreLink: '<p class="text-right"><a class="text-dark" href="#">展開 <i class="fas fa-chevron-down"></i></a></p>',
+            lessLink: '<p class="text-right"><a class="text-dark" href="#">收合 <i class="fas fa-chevron-up"></i></a></p>',
+        });
         $.home();
     </script>
     </body>
