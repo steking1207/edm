@@ -15,7 +15,7 @@ var $$ = {
 
 //Functions
 function lazyLoadGoogleMap(canvas, addr) {
-  $.getScript("//maps.google.com/maps/api/js?key=AIzaSyBJfBxwjbrHacrORsc3ovnDYBnss-NQrcA&sensor=true&callback=initializeMap")
+  $.getScript("//maps.google.com/maps/api/js?key=AIzaSyD6piIpu_iVGX8ZNUF5F8GWr2udHRYMxJ0&sensor=true&callback=initializeMap")
     .done(function () {
       $.googleMap.initMap(canvas, addr);
     });
@@ -107,7 +107,7 @@ var EDM = {
           };
 
           var image = {
-            url: '/assets/img/map-pin.png',
+            url: '/assets/img/ui/map-pin.png',
             size: new google.maps.Size(44, 73),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(22, 73)

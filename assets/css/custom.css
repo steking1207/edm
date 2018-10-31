@@ -439,25 +439,25 @@ a.card-overlay:hover .card-img, a.card-overlay:active .card-img, a.card-overlay:
 
 .container-map {
   position: relative; }
-.container-map .map {
+.container-map .map, .container-map #map_canvas {
   position: relative;
   z-index: 1;
   height: 450px;
   /* padding-top: 120.5333333333%; */
   background: #333; }
 @media (min-width: 768px) {
-  .container-map .map {
+  .container-map .map, .container-map #map_canvas {
     height: 600px;
     /* padding-top: 58.3333333333% */ } }
 @media (min-width: 992px) {
-  .container-map .map {
+  .container-map .map, .container-map #map_canvas {
     height: 600px;
     padding-top: 0; } }
 @media (min-width: 1200px) {
-  .container-map .map {
+  .container-map .map, .container-map #map_canvas {
     height: 720px; } }
 @media (min-width: 1440px) {
-  .container-map .map {
+  .container-map .map, .container-map #map_canvas {
     height: 840px; } }
 .container-map .card-contact {
   margin: 2rem auto 2rem;
