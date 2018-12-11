@@ -267,7 +267,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="main">
     <div class="container">
 
-        <div class="card-columns">
+        <div class="card-grid">
+            <div class="card-sizer"></div>
             <div class="card my-4">
                 <img class="card-img-top" src="../assets/img/uploads/article-cover-image-1.jpg" alt="">
                 <div class="card-body px-0">
@@ -275,7 +276,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <a class="font-weight-bold text-muted" href="">最新消息</a>｜21 November, 2017
                     </div>
                     <a class="card-title h3 font-weight-bold d-block my-2" href="post.html">Lorem ipsum dolor</a>
-                    <p class="card-text text-row-2 mb-8">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text text-row-2 mb-8">1111 is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <a class="btn btn-primary" href="post.html">繼續閱讀</a>
                 </div>
             </div>
@@ -286,7 +287,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <a class="font-weight-bold text-muted" href="">最新消息</a>｜21 November, 2017
                     </div>
                     <a class="card-title h3 font-weight-bold d-block my-2" href="post.html">This is a longer card with supporting</a>
-                    <p class="card-text text-row-2 mb-8">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text text-row-2 mb-8">2222 is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <a class="btn btn-primary" href="post.html">繼續閱讀</a>
                 </div>
             </div>
@@ -297,7 +298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <a class="font-weight-bold text-muted" href="">最新消息</a>｜21 November, 2017
                     </div>
                     <a class="card-title h3 font-weight-bold d-block my-2" href="post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit </a>
-                    <p class="card-text text-row-2 mb-8">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text text-row-2 mb-8">3333 is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <a class="btn btn-primary" href="post.html">繼續閱讀</a>
                 </div>
             </div>
@@ -404,12 +405,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="../assets/js/function/module.js"></script>
     <script>
         $("#kv-news").load("../module/kv-news.html");
-        $("#nav-pagination").load("../module/nav-pagination.html");
     </script>
 
     <!-- single -->
-
+    <script src="../assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/js/vendor/masonry.pkgd.min.js"></script>
     <script>
+        var $grid = $('.card-grid').imagesLoaded( function() {
+            $grid.masonry({
+                itemSelector: '.card',
+                percentPosition: true,
+                columnWidth: '.card-sizer'
+            });
+        });
         $.home();
     </script>
     </body>

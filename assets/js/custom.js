@@ -6,6 +6,13 @@ $('.slick-gallery').slick({
     dots:true,
 });
 
+$('.slider-school-gallery').owlCarousel({
+    loop: true,
+    items: 1,
+    nav: true,
+    dots: true,
+});
+
 //        $(function(){
 //            $(".dropdown-menu a.dropdown-item").click(function(){
 //                $(this).parents(".dropdown").find('.dropdown-toggle').text($(this).text());
@@ -59,7 +66,7 @@ $(document).ready(function () {
         top: 150,
         responsive: {
             992: {
-                disable: true
+                top: 58
             }
         }
     });

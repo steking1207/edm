@@ -171,6 +171,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="row row-signup no-gutters">
                     <div class="col-12 col-md-5 col-signup-intro">
                         <div class="box h-100 d-flex flex-column">
+                            <div class="position-absolute d-md-none" style="left: 1rem; top: 1rem;">
+                            <a class="text-white" data-dismiss="modal" href="javascript:void();">
+                                <i class="fas fa-sm fa-chevron-left mr-3"></i> 返回
+                            </a>
+                        </div>
                             <div class="mb-auto"></div>
                             <img class="img-fluid logo mb-3" src="../assets/img/ui/logo_simple_white.svg" alt="">
                             <div class="h3 font-weight-bold mb-4">
@@ -182,7 +187,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
                     <div class="col-12 col-md-7 col-signup-form">
-                        <div class="position-absolute" style="right: 1rem; top: 1rem;">
+                        <div class="position-absolute d-none d-md-block" style="right: 1rem; top: 1rem;">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <i class="fas fa-sm fa-times"></i>
                             </button>
@@ -252,7 +257,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                 <input type="checkbox" class="custom-control-input" id="customCheck-agree">
                                                 <label class="custom-control-label" for="customCheck-agree">個人情報收集及使用同意</label>
                                             </div>
-                                            <div class="box-agree">
+                                            <div class="box-agree scrollbar-inner">>
                                                 第1條。個人信息收集項目<br>
                                                 由於諮詢和服務提供的原因，公司收集如下個人信息。<br>
                                                 個人信息收集項目<br>
@@ -283,26 +288,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-3">
                                                 <div class="custom-control custom-checkbox my-2">
-                                                    <input type="checkbox" class="custom-control-input " id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">英國</label>
+                                                    <input type="checkbox" class="custom-control-input " id="customCheck-city-1">
+                                                    <label class="custom-control-label w-100" for="customCheck-city-1">英國</label>
                                                 </div>
                                                 </div>
                                                 <div class="col-12 col-sm-3">
                                                 <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">加拿大</label>
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-2">
+                                                    <label class="custom-control-label w-100" for="customCheck-city-2">加拿大</label>
                                                 </div>
                                                 </div>
                                                 <div class="col-12 col-sm-3">
                                                     <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">美國</label>
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-3">
+                                                    <label class="custom-control-label w-100" for="customCheck-city-3">美國</label>
                                                 </div>
                                                 </div>
                                                 <div class="col-12 col-sm-3">
                                                 <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                    <label class="custom-control-label w-100" for="customCheck-city-all">澳洲</label>
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck-city-4">
+                                                    <label class="custom-control-label w-100" for="customCheck-city-4">澳洲</label>
                                                 </div>
                                                 </div>
                                             </div>
@@ -312,20 +317,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                             <div class="form-row">
                                                 <div class="col-12 col-sm-3">
                                                     <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                        <input type="checkbox" class="custom-control-input " id="customCheck-city-all">
-                                                        <label class="custom-control-label w-100" for="customCheck-city-all">語言</label>
+                                                        <input type="checkbox" class="custom-control-input " id="customCheck-lang-1">
+                                                        <label class="custom-control-label w-100" for="customCheck-lang-1">語言</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-sm-3">
                                                     <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                        <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                        <label class="custom-control-label w-100" for="customCheck-city-all">出國留學</label>
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck-lang-2">
+                                                        <label class="custom-control-label w-100" for="customCheck-lang-2">出國留學</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-sm-3">
                                                     <div class="custom-control custom-checkbox custom-control-inline my-2">
-                                                        <input type="checkbox" class="custom-control-input" id="customCheck-city-all">
-                                                        <label class="custom-control-label w-100" for="customCheck-city-all">學習藝術</label>
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck-lang-3">
+                                                        <label class="custom-control-label w-100" for="customCheck-lang-3">學習藝術</label>
                                                     </div>
                                                 </div>
                                             </div>

@@ -146,9 +146,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <main class="main pt-0">
     <div class="container-map">
-                <div class="map">
-                    <div id="map_canvas"></div>
-                </div>
+        <div id="map-canvas" class="map-local"></div>
                 <div class="card-contact box-edm">
                     <h4 class="caption">台北辦公室</h4>
                     <address>
@@ -181,10 +179,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                         <div class="line__desktop">
                             <p class="txt">
-                                <img class="line__logo" src="/assets/img/line.png">
+                                <img class="line__logo" src="../assets/img/ui/line.png">
                                 1:1 專業諮詢
                             </p>
-                            <img src="/assets/img/qrcode.png">
+                            <img src="../assets/img/ui/qrcode.png">
                         </div>
                     </div>
                 </div>
@@ -243,7 +241,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <input type="checkbox" class="custom-control-input" id="customCheck-agree">
                                         <label class="custom-control-label" for="customCheck-agree">個人情報收集及使用同意</label>
                                     </div>
-                                    <div class="box-agree">
+                                    <div class="box-agree scrollbar-inner">>
                                         第1條。個人信息收集項目<br>
                                         由於諮詢和服務提供的原因，公司收集如下個人信息。<br>
                                         個人信息收集項目<br>
@@ -291,6 +289,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="../assets/js/jquery/owl.carousel.min.js?v=1537528068"></script>
 	<script src="../assets/js/main.js?v=1538384436"></script>
 	<script src="../assets/js/custom.js"></script>
+
+    <!-- Google Map API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6piIpu_iVGX8ZNUF5F8GWr2udHRYMxJ0&callback=initMap" type="text/javascript"></script>
+    <script>
+        function initMap() {
+            var mylatlng = {lat: 25.041495, lng: 121.550546};
+            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                zoom: 15,
+                center: mylatlng
+            });
+            var marker = new google.maps.Marker({
+                position: mylatlng,
+                map: map,
+                icon: "../assets/img/ui/map-pin.png",
+            });
+        }
+    </script>
 
     <!-- module include -->
     <script src="../assets/js/function/module.js"></script>
