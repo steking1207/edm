@@ -115,7 +115,6 @@ var EDM = {
               0: {
                 items: 3
               },
-
               768: {
                 items: 5
               },
@@ -221,7 +220,7 @@ var getPath = window.location.pathname;
 // add count effect
 //if (getPath === '/') {
   $(window).on('scroll', function () {
-    if ($(window).scrollTop() >= $('#section-count').offset().top) {
+    if ($(window).scrollTop() >= $('.index-section-hot').offset().top) {
 
       $(".number").each(function (index, element) {
         counter($(element));

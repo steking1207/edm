@@ -263,7 +263,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                 個人信息收集項目<br>
                                                 第1條。個人信息收集項目<br>
                                                 由於諮詢和服務提供的原因，公司收集如下個人信息。<br>
-                                                個人信息收集項目<br>
+                                                個人信息收集項目<br><br>
                                             </div>
                                         </div>
                                         <div class="form-group mb-6">
@@ -284,8 +284,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="tab-pane fade pt-8" id="tab-step2" role="tabpanel">
                                     <form>
                                         <div class="form-group mb-6">
-                                            <label class="text-muted">想去的國家?</label>
-                                            <div class="form-row">
+                                            <div class="d-none d-md-block">
+                                                <label class="text-muted">想去的國家?</label>
+                                            </div>
+                                            <div class="d-md-none">
+                                                <a class="collapse-arrow-v text-dark" data-toggle="collapse" href="#collapse-countries">
+                                                    <label class="text-muted">想去的國家?</label>
+                                                </a>
+                                            </div>
+                                            <div class="form-row collapse show" id="collapse-countries">
                                                 <div class="col-12 col-sm-3">
                                                 <div class="custom-control custom-checkbox my-2">
                                                     <input type="checkbox" class="custom-control-input " id="customCheck-city-1">
@@ -313,8 +320,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                             </div>
                                         </div>
                                         <div class="form-group mb-6">
-                                            <label class="text-muted">興趣課程</label>
-                                            <div class="form-row">
+                                            <div class="d-none d-md-block">
+                                                <label class="text-muted">興趣課程</label>
+                                            </div>
+                                            <div class="d-md-none">
+                                                <a class="collapse-arrow-v text-dark" data-toggle="collapse" href="#collapse-courses">
+                                                    <label class="text-muted">興趣課程</label>
+                                                </a>
+                                            </div>
+                                            <div class="form-row collapse show" id="collapse-courses">
                                                 <div class="col-12 col-sm-3">
                                                     <div class="custom-control custom-checkbox custom-control-inline my-2">
                                                         <input type="checkbox" class="custom-control-input " id="customCheck-lang-1">
@@ -337,7 +351,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         </div>
                                         <div class="form-group mb-6">
                                             <label class="text-muted">預計出發日</label>
-                                            <input type="text" class="form-control" placeholder="請輸入年份/月份 (YYYY/MM)">
+<!--                                            <input type="text" class="form-control" placeholder="請輸入年份/月份 (YYYY/MM)">-->
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <select class="custom-select form-control px-0">
+                                                        <option>年</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <select class="custom-select form-control px-0">
+                                                        <option>月</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="form-group mb-6">
                                             <label class="text-muted">Line ID</label>

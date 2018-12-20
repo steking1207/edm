@@ -263,7 +263,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main class="main">
     <div class="container">
 
-        <div class="card-columns">
+        <div class="card-grid">
+            <div class="card-sizer"></div>
             <div class="card my-4">
                 <img class="card-img-top" src="../assets/img/uploads/article-cover-image-1.jpg" alt="">
                 <div class="card-body px-0">
@@ -401,11 +402,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="../assets/js/function/module.js"></script>
     <script>
         $("#kv-share").load("../module/kv-share.html");
-        $("#nav-pagination").load("../module/nav-pagination.html");
     </script>
 
     <!-- single -->
+    <script src="../assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/js/vendor/masonry.pkgd.min.js"></script>
     <script>
+        var $grid = $('.card-grid').imagesLoaded( function() {
+            $grid.masonry({
+                itemSelector: '.card',
+                percentPosition: true,
+                columnWidth: '.card-sizer'
+            });
+        });
         $.home();
     </script>
     </body>
