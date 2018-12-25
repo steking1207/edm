@@ -76,7 +76,6 @@ $(document).ready(function () {
         }
     });
     $('.sticky-sidebar').hcSticky({
-        stickTo: '#content',
         top: 220,
         responsive: {
             992: {
