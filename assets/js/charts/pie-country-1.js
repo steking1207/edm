@@ -15,16 +15,16 @@ function drawCharts() {
         backgroundColor: 'transparent',
         pieHole: 0.5,
         colors: [
-                 "e33b4a",
-                 "ef664e",
-                 "ef9545",
-                 "efc62f",
-                 "1cb39c",
-                 "26ace3",
-                 "297c9e",
-                 "5274b6",
-                 "a4678b",
-                 "b65284"
+                 "f16548",
+                 "f1963a",
+                 "00b49c",
+                 "5073b8",
+                 "e53946",
+                 "b85084",
+                 "a5668c",
+                 "16abe5",
+                 "237ba0",
+                 "f0c709"
                 ],
         pieSliceText: 'label',
         pieSliceTextStyle: {
